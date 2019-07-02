@@ -4,8 +4,8 @@
 [ext_resource path="res://addons/ScalingTextureProgress/icon.png" type="Texture" id=2]
 [ext_resource path="res://assets/gray-512x320.png" type="Texture" id=3]
 [ext_resource path="res://assets/blue-512x320.png" type="Texture" id=4]
-[ext_resource path="res://assets/gray-82x131.png" type="Texture" id=5]
-[ext_resource path="res://assets/blue-82x131.png" type="Texture" id=6]
+[ext_resource path="res://assets/gray-66x41.png" type="Texture" id=5]
+[ext_resource path="res://assets/blue-66x41.png" type="Texture" id=6]
 
 [node name="Control" type="PanelContainer"]
 
@@ -15,20 +15,20 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 1038.0
-margin/bottom = 614.0
+margin/right = 526.0
+margin/bottom = 314.0
 
 [node name="ColorFrame" type="ColorFrame" parent="."]
 
-rect/min_size = Vector2( 1024, 600 )
+rect/min_size = Vector2( 512, 300 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 7.0
 margin/top = 7.0
-margin/right = 1031.0
-margin/bottom = 607.0
+margin/right = 519.0
+margin/bottom = 307.0
 color = Color( 1, 1, 1, 1 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -39,21 +39,21 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 7.0
 margin/top = 7.0
-margin/right = 1031.0
-margin/bottom = 607.0
+margin/right = 519.0
+margin/bottom = 307.0
 alignment = 0
 
 [node name="ScalingTextureProgress" type="MarginContainer" parent="VBoxContainer"]
 
-rect/min_size = Vector2( 131, 82 )
+rect/min_size = Vector2( 66, 41 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 1
 size_flags/vertical = 1
-margin/left = 446.0
-margin/top = 27.0
-margin/right = 577.0
-margin/bottom = 109.0
+margin/left = 223.0
+margin/top = 53.0
+margin/right = 289.0
+margin/bottom = 94.0
 script/script = ExtResource( 1 )
 __meta__ = {
 "_editor_icon": ExtResource( 2 )
@@ -79,10 +79,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 1
 size_flags/vertical = 1
-margin/left = 446.0
-margin/top = 167.0
-margin/right = 577.0
-margin/bottom = 249.0
+margin/left = 223.0
+margin/top = 205.0
+margin/right = 289.0
+margin/bottom = 246.0
 range/min = 0.0
 range/max = 100.0
 range/step = 1.0
@@ -93,31 +93,6 @@ range/rounded = false
 texture/under = ExtResource( 5 )
 texture/over = null
 texture/progress = ExtResource( 6 )
-mode = 4
-radial_fill/initial_angle = 215.0
-radial_fill/fill_degrees = 290.0
-radial_fill/center_offset = Vector2( 0, 0 )
-
-[node name="hd" type="TextureProgress" parent="VBoxContainer"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 1
-size_flags/vertical = 1
-margin/left = 256.0
-margin/top = 280.0
-margin/right = 768.0
-margin/bottom = 600.0
-range/min = 0.0
-range/max = 100.0
-range/step = 1.0
-range/page = 0.0
-range/value = 50.0
-range/exp_edit = false
-range/rounded = false
-texture/under = ExtResource( 3 )
-texture/over = null
-texture/progress = ExtResource( 4 )
 mode = 4
 radial_fill/initial_angle = 215.0
 radial_fill/fill_degrees = 290.0
