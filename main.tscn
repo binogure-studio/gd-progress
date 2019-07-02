@@ -1,0 +1,126 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://addons/ScalingTextureProgress/script.gd" type="Script" id=1]
+[ext_resource path="res://addons/ScalingTextureProgress/icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/gray-512x320.png" type="Texture" id=3]
+[ext_resource path="res://assets/blue-512x320.png" type="Texture" id=4]
+[ext_resource path="res://assets/gray-82x131.png" type="Texture" id=5]
+[ext_resource path="res://assets/blue-82x131.png" type="Texture" id=6]
+
+[node name="Control" type="PanelContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1038.0
+margin/bottom = 614.0
+
+[node name="ColorFrame" type="ColorFrame" parent="."]
+
+rect/min_size = Vector2( 1024, 600 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 7.0
+margin/right = 1031.0
+margin/bottom = 607.0
+color = Color( 1, 1, 1, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 7.0
+margin/right = 1031.0
+margin/bottom = 607.0
+alignment = 0
+
+[node name="ScalingTextureProgress" type="MarginContainer" parent="VBoxContainer"]
+
+rect/min_size = Vector2( 131, 82 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 446.0
+margin/top = 27.0
+margin/right = 577.0
+margin/bottom = 109.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_editor_icon": ExtResource( 2 )
+}
+background_texture = ExtResource( 3 )
+foreground_texture = null
+progress_texture = ExtResource( 4 )
+fill_mode = 0
+radial_initial_angle = 0.0
+fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+exp_unit_value = true
+rounded_values = true
+maximum = 100.0
+minimum = 0.0
+page = 0.0
+step = 1.0
+value = 50.0
+
+[node name="default" type="TextureProgress" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 446.0
+margin/top = 167.0
+margin/right = 577.0
+margin/bottom = 249.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 50.0
+range/exp_edit = false
+range/rounded = false
+texture/under = ExtResource( 5 )
+texture/over = null
+texture/progress = ExtResource( 6 )
+mode = 4
+radial_fill/initial_angle = 215.0
+radial_fill/fill_degrees = 290.0
+radial_fill/center_offset = Vector2( 0, 0 )
+
+[node name="hd" type="TextureProgress" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 1
+margin/left = 256.0
+margin/top = 280.0
+margin/right = 768.0
+margin/bottom = 600.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 50.0
+range/exp_edit = false
+range/rounded = false
+texture/under = ExtResource( 3 )
+texture/over = null
+texture/progress = ExtResource( 4 )
+mode = 4
+radial_fill/initial_angle = 215.0
+radial_fill/fill_degrees = 290.0
+radial_fill/center_offset = Vector2( 0, 0 )
+
+
